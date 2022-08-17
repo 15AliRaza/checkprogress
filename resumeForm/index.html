@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Resume Header</h1>
+    </div>
+    <main>
+      <div class="form-side">
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
+            <button type="button" onclick="myfun()">&#10003;</button>
+          </div>
+          <div class="form-group">
+            <label for="Education">Education:</label>
+            <select id="education" name="education">
+              <option value="">Select Degree</option>
+              <option value="Matric">Matric</option>
+              <option value="FSc">FSc</option>
+              <option value="BSc">BSc</option>
+              <option value="BS(Hons)">BS(Hons)</option>
+              <option value="MSc">MSc</option>
+            </select>
+            <button type="button" onclick="eduFun()">&#10003;</button>
+          </div>
+
+          <div class="form-group">
+            <label>Skills:</label>
+            <div class="content">
+              <ul>
+                <input type="text" />
+              </ul>
+            </div>
+            <button type="button" onclick="skillFun()">&#10003;</button>
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Experience:</label>
+            <input type="text" id="experience" />
+            <button type="button" onclick="expFun()">&#10003;</button>
+          </div>
+        </form>
+      </div>
+      <div class="result-side">
+        <div class="result-group">
+          <label for="resultName">Name:</label>
+          <div id="resultName" class="result-value"></div>
+        </div>
+        <div class="result-group">
+          <label for="resultEducation">Education:</label>
+          <div id="resultEducation" class="result-value"></div>
+        </div>
+        <div class="result-group">
+          <label for="resultSkill">Skills:</label>
+          <div id="resultSkill" class="result-value"></div>
+        </div>
+        <div class="result-group">
+          <label for="resultExp">Experience:</label>
+          <div id="resultExp" class="result-value"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
